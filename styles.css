@@ -289,9 +289,12 @@ main {
   grid-gap: 2em;
 }
 
+
 @media (min-width: 768px) {
   .project--centered {
-    grid-column: 2 / 3;
+    grid-column: 1 / -1;  
+    max-width: 18em;       
+    justify-self: center;  
   }
 }
 
