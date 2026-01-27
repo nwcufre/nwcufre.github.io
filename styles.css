@@ -39,7 +39,24 @@
 .project__cta--powerbi i {
   color: #f2c811; /* Power BI yellow */
 }
+.project__cta--powerbi {
+  color: #1a73e8; /* clean, recognizable link blue */
+}
+.project__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+}
 
+.project__cta:hover {
+  text-decoration: underline;
+}
+.project__cta--powerbi:hover {
+  text-decoration: underline;
+}
 .project__cta i {
   color: #1d6f42;
 }
