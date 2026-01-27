@@ -392,12 +392,13 @@ main {
 }
 
 .project video {
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
+  margin-top: 0.9em;
+  margin-bottom: 1em;
 }
 
 .project video {
   border-radius: 6px;
+  
 }
 
 .project h3 {
