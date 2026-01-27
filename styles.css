@@ -15,7 +15,21 @@
   box-sizing: border-box;
 }
 
+.video-fallback {
+  margin: 0.75rem 0 0.35rem; /* very close to the video */
+  font-size: 0.75rem;
+  text-align: right;
+  color: var(--clr-fg-alt);
+}
 
+.video-fallback a {
+  color: #1a73e8; /* clear, familiar blue */
+  text-decoration: none;
+}
+
+.video-fallback a:hover {
+  text-decoration: underline;
+}
 
 .projects__note {
   max-width: 900px;
