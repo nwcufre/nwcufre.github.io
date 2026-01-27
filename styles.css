@@ -16,7 +16,7 @@
 }
 
 .video-fallback {
-  margin: 0.75rem 0 0.35rem; /* very close to the video */
+  margin: 0.4rem 0 0.15rem; /* very close to the video */
   font-size: 0.75rem;
   text-align: right;
   color: var(--clr-fg-alt);
