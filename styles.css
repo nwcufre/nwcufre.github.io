@@ -15,6 +15,15 @@
   box-sizing: border-box;
 }
 
+.project__description p {
+  margin: 0.5rem 0;
+}
+
+.project__description {
+  line-height: 1.55;
+  max-width: 60ch; /* optional, improves readability */
+}
+
 .project__cta {
   display: inline-flex;
   align-items: center;
