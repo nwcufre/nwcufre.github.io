@@ -16,8 +16,10 @@
 }
 
 .video-fallback {
-  margin: 0.2rem 0 0.10rem; /* very close to the video */
+  margin: 0.15rem 0 0.05rem;
+  padding: 0;
   font-size: 0.75rem;
+  line-height: 1; /* THIS is key */
   text-align: right;
   color: var(--clr-fg-alt);
 }
