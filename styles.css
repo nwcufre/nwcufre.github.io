@@ -285,8 +285,26 @@ main {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  grid-gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+}
+
+@media (max-width: 768px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  text-align: left;   /* much easier to read */
+}
+
+.project__description {
+  line-height: 1.6;
+}
+
+.project__description {
+  max-width: 65ch;
 }
 
 
