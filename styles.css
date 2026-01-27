@@ -15,6 +15,26 @@
   box-sizing: border-box;
 }
 
+.project__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-weight: 500;
+}
+
+/* Optional intent coloring */
+.project__cta--excel i {
+  color: #1d6f42;
+}
+
+.project__cta--powerbi i {
+  color: #f2c811; /* Power BI yellow */
+}
+
+.project__cta i {
+  color: #1d6f42;
+}
+
 html {
   scroll-behavior: smooth;
 }
