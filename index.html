@@ -281,7 +281,7 @@
       </section>
 
       <!-- Contact -->
-    <section class="section contact center" id="contact">
+   <section class="section contact center" id="contact">
   <h2 class="section__title">Contact</h2>
 
   <a href="mailto:nazareno_cufre@hotmail.com">
@@ -289,7 +289,8 @@
   </a>
 
   <p class="contact__email">
-    nazareno_cufre@hotmail.com
+    <span id="email-text">nazareno_cufre@hotmail.com</span>
+    <span id="copy-hint">(click to copy)</span>
   </p>
 </section>
     </main>
@@ -312,5 +313,21 @@
     </div>
 
     <script src="./script.js"></script>
+    <script>
+  const emailText = document.getElementById("email-text");
+  const copyHint = document.getElementById("copy-hint");
+
+  emailText.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(emailText.textContent);
+      copyHint.textContent = "Copied!";
+      setTimeout(() => {
+        copyHint.textContent = "(click to copy)";
+      }, 1500);
+    } catch (err) {
+      copyHint.textContent = "Copy failed";
+    }
+  });
+</script>
   </body>
 </html>
