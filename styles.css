@@ -45,6 +45,12 @@ body {
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
+.project__cta {
+  display: inline-block;
+  margin-top: 0.5em;
+  font-weight: 500;
+}
+
 ::-moz-selection {
   background: var(--clr-primary);
   color: var(--clr-bg);
