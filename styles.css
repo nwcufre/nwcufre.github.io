@@ -19,7 +19,7 @@
   margin: 0.15rem 0 0.05rem;
   padding: 0;
   font-size: 0.75rem;
-  line-height: 1; /* THIS is key */
+  line-height: 0.8; /* THIS is key */
   text-align: right;
   color: var(--clr-fg-alt);
 }
@@ -392,14 +392,10 @@ main {
 }
 
 .project video {
-  margin-top: 0.9em;
-  margin-bottom: 1em;
-}
-
-.project video {
+  margin-top: 0.6em;
+  margin-bottom: 0.8em;
   border-radius: 6px;
-  
-}
+
 
 .project h3 {
   margin-bottom: 1em;
