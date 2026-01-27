@@ -331,6 +331,19 @@ main {
   }
 }
 
+.contact__email {
+  margin-top: 0.75em;
+  font-size: 0.95rem;
+  color: #666;
+  cursor: pointer;
+}
+
+#copy-hint {
+  margin-left: 0.5em;
+  font-size: 0.85rem;
+  color: #999;
+}
+
 .project {
   padding: 2em;
   margin: 0 auto;
