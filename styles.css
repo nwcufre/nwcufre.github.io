@@ -15,29 +15,51 @@
   box-sizing: border-box;
 }
 
+/* INSIGHTS PANEL */
 .project__insights {
-  margin: 1rem 0 1.25rem;
+  margin: 1rem 0 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.15); /* thin subtle border */
+  background-color: rgba(0, 0, 0, 0.025); /* very light transparent tone */
+  border-radius: 4px;
   text-align: left;
 }
 
 .project__insights h4 {
-  margin: 0 0 0.4rem;
-  font-size: 0.85rem;
+  margin: 0 0 0.6rem;
+  font-size: 0.92rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--clr-fg-alt);
+  color: var(--clr-fg); /* match card text color */
+  letter-spacing: 0.025em;
 }
 
+/* clean solid bullets */
 .project__insights ul {
   margin: 0;
-  padding-left: 1.1rem;
+  padding-left: 1.25rem;
+  list-style: none; /* remove default list style */
 }
 
 .project__insights li {
-  margin-bottom: 0.35rem;
-  font-size: 0.85rem;
-  line-height: 1.4;
+  position: relative;
+  margin-bottom: 0.6rem;
+  padding-left: 1rem;
+  font-size: 0.93rem;
+  line-height: 1.5;
+  color: var(--clr-fg);
+}
+
+/* solid circle bullet */
+.project__insights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: var(--clr-fg); /* solid dot the same color as text */
+  border-radius: 50%;
 }
 
 .video-fallback {
