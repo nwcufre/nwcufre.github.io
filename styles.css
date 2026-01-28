@@ -19,37 +19,39 @@
 .project__insights {
   margin: 1rem 0 1.5rem;
   padding: 0.75rem 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.15); /* thin subtle border */
-  background-color: rgba(0, 0, 0, 0.025); /* very light transparent tone */
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.025); /* uniform light grey background */
   border-radius: 4px;
   text-align: left;
 }
 
+/* "Key insights" title */
 .project__insights h4 {
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.5rem;
   font-size: 0.92rem;
   font-weight: 600;
-  color: var(--clr-fg); /* match card text color */
-  letter-spacing: 0.025em;
-}
-
-/* clean solid bullets */
-.project__insights ul {
-  margin: 0;
-  padding-left: 1.25rem;
-  list-style: none; /* remove default list style */
-}
-
-.project__insights li {
-  position: relative;
-  margin-bottom: 0.6rem;
-  padding-left: 1rem;
-  font-size: 0.93rem;
-  line-height: 1.5;
+  letter-spacing: 0.03em;
   color: var(--clr-fg);
 }
 
-/* solid circle bullet */
+/* list container */
+.project__insights ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: none;
+}
+
+/* individual insight lines */
+.project__insights li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  font-size: 0.85rem; /* slightly smaller than body text */
+  line-height: 1.45;
+  color: var(--clr-fg);
+}
+
+/* solid bullet */
 .project__insights li::before {
   content: "";
   position: absolute;
@@ -58,10 +60,9 @@
   transform: translateY(-50%);
   width: 6px;
   height: 6px;
-  background-color: var(--clr-fg); /* solid dot the same color as text */
+  background-color: var(--clr-fg);
   border-radius: 50%;
 }
-
 .video-fallback {
   margin: 0.2rem 0 0.1rem; /* very close to the video */
   font-size: 0.75rem;
