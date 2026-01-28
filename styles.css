@@ -19,17 +19,19 @@
 
 /* INSIGHTS PANEL */
 .project__insights {
-  margin-top: 1rem;
-  padding-top: 0.75rem;
+  margin-top: 1.25rem;
 
-  /* Only a top divider */
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  /* More space between text and lines */
+  padding: 1.1rem 0;
 
-  /* Remove everything else */
+  /* Subtle dividers */
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
   border-left: none;
   border-right: none;
-  border-bottom: none;
   background: none;
+
   text-align: left;
 }
 
