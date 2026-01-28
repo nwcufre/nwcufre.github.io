@@ -15,6 +15,31 @@
   box-sizing: border-box;
 }
 
+.project__insights {
+  margin: 1rem 0 1.25rem;
+  text-align: left;
+}
+
+.project__insights h4 {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--clr-fg-alt);
+}
+
+.project__insights ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.project__insights li {
+  margin-bottom: 0.35rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
 .video-fallback {
   margin: 0.2rem 0 0.1rem; /* very close to the video */
   font-size: 0.75rem;
